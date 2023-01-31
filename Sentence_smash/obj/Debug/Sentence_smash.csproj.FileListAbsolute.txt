@@ -1,0 +1,7 @@
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\bin\Debug\Sentence_smash.exe.config
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\bin\Debug\Sentence_smash.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\bin\Debug\Sentence_smash.pdb
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\obj\Debug\Sentence_smash.csproj.AssemblyReference.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\obj\Debug\Sentence_smash.csproj.CoreCompileInputs.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\obj\Debug\Sentence_smash.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Sentence_smash\obj\Debug\Sentence_smash.pdb
