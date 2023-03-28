@@ -1,0 +1,7 @@
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\bin\Debug\Zigzag-Conversion.exe.config
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\bin\Debug\Zigzag-Conversion.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\bin\Debug\Zigzag-Conversion.pdb
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\obj\Debug\Zigzag-Conversion.csproj.AssemblyReference.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\obj\Debug\Zigzag-Conversion.csproj.CoreCompileInputs.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\obj\Debug\Zigzag-Conversion.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\Zigzag-Conversion\obj\Debug\Zigzag-Conversion.pdb
