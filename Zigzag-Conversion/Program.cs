@@ -31,9 +31,40 @@ namespace Zigzag_Conversion
                 
             }
 
-
             int answer = find_it( myArray);
-            Console.WriteLine ($"The answer is {answer}");
+            //Console.WriteLine ($"The answer is {answer}");
+
+            string text = "In a village's of La Mancha, e";
+            var words = text.Split( );
+            List<string> theWords = new List<string>();
+
+            foreach (var word in words)
+            {
+                bool isWord = true;
+                foreach (char letter in word)
+                {
+                    if (!Char.IsLetter(letter))
+                    {
+                        isWord = false;
+                    }
+                   
+                }
+                if (isWord)
+                {
+                    theWords.Add(word);
+                }
+
+            }
+
+            foreach (var word in theWords)
+            {
+                Console.WriteLine(word);
+            }
+            
+
+
+         
+
 
             Console.ReadLine();
         }
@@ -53,7 +84,17 @@ namespace Zigzag_Conversion
             }
             return answer;
             }
-        }
 
+
+        public static List<string> Top3(string s)
+        {
+            // Your code here
+            return null;
+        }
     }
+    //MOst frequently used words in a text
+    
+
+
+}
 
