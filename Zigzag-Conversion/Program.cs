@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Zigzag_Conversion
@@ -34,36 +35,18 @@ namespace Zigzag_Conversion
             int answer = find_it( myArray);
             //Console.WriteLine ($"The answer is {answer}");
 
-            string text = "In a village's of La Mancha, e";
-            var words = text.Split( );
-            List<string> theWords = new List<string>();
-
-            foreach (var word in words)
-            {
-                bool isWord = true;
-                foreach (char letter in word)
-                {
-                    if (!Char.IsLetter(letter))
-                    {
-                        isWord = false;
-                    }
-                   
-                }
-                if (isWord)
-                {
-                    theWords.Add(word);
-                }
-
-            }
-
-            foreach (var word in theWords)
-            {
-                Console.WriteLine(word);
-            }
-            
-
-
+            string s = "a a a  b  c c  d d d d  e e e e e";
          
+          
+
+
+            List<string> orderedWords = Top3(s);
+
+            foreach (var item in orderedWords)
+            {
+                Console.WriteLine(item);
+            }
+
 
 
             Console.ReadLine();
@@ -88,8 +71,50 @@ namespace Zigzag_Conversion
 
         public static List<string> Top3(string s)
         {
-            // Your code here
-            return null;
+            List<string> answer = new List<string>();
+            if (String.IsNullOrWhiteSpace(s))
+            {
+                return answer;
+            }
+            else
+            {
+                string[] words = s.ToLower().Split();
+                List<string> allWords = new List<string>();
+                foreach (string word in words)
+                {
+                    string cleanWord = Regex.Replace(word, @"[^a-zA-Z']+", "");
+                    if (!String.IsNullOrEmpty(cleanWord))
+                    {
+                        allWords.Add(cleanWord);
+                    }
+                    
+                }
+                List<string> orderedWords = allWords.GroupBy(x => x)
+                    .OrderByDescending(x => x.Count())
+                    .Select(x => x.Key)
+                    .ToList();
+
+                //PrintLista(orderedWords);
+
+                if (orderedWords.Count < 4)
+                {
+                    return orderedWords;
+                }
+                else
+                {
+                    return orderedWords.Take(3).ToList();
+                }
+            }
+            
+    
+        }
+
+        public static void PrintLista(List<string> aLista)
+        {
+            foreach (var item in aLista)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
     //MOst frequently used words in a text
