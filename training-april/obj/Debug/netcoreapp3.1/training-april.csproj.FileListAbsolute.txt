@@ -1,0 +1,14 @@
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.deps.json
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.runtimeconfig.json
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.runtimeconfig.dev.json
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.dll
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\bin\Debug\netcoreapp3.1\training-april.pdb
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.csproj.AssemblyReference.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.AssemblyInfoInputs.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.AssemblyInfo.cs
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.csproj.CoreCompileInputs.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.dll
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.pdb
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\training-april\obj\Debug\netcoreapp3.1\training-april.genruntimeconfig.cache
