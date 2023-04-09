@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace training_april
 {
@@ -8,17 +10,23 @@ namespace training_april
     {
         static void Main(string[] args)
         {
+            string words = " PvJZQkgd pvMxP ZhHEeCrDV Yplb:ZhHEeCrDV:kFBSMXyyd'?pvMxP-ZhHEeCrDV ZhHEeCrDV?kFBSMXyyd'_kFBSMXyyd' cgFv pvMxP_Yplb:PvJZQkgd.ZhHEeCrDV ZhHEeCrDV.PvJZQkgd-cgFv!kFBSMXyyd'!PvJZQkgd/ZhHEeCrDV zbyUuh Yplb PvJZQkgd!kFBSMXyyd' cgFv ZhHEeCrDV,Yplb.ZhHEeCrDV PvJZQkgd cgFv!cgFv cgFv PvJZQkgd pvMxP.kFBSMXyyd'.kFBSMXyyd' ZhHEeCrDV Yplb ZhHEeCrDV PvJZQkgd ZhHEeCrDV zbyUuh kFBSMXyyd';kFBSMXyyd'-cgFv?pvMxP/ZhHEeCrDV kFBSMXyyd' pvMxP ZhHEeCrDV?zbyUuh ZhHEeCrDV_Yplb ZhHEeCrDV?Yplb-zbyUuh zbyUuh zbyUuh zbyUuh_Yplb.ZhHEeCrDV.pvMxP zbyUuh zbyUuh?Yplb ZhHEeCrDV zbyUuh ZhHEeCrDV:zbyUuh,ZhHEeCrDV kFBSMXyyd' zbyUuh kFBSMXyyd'-ZhHEeCrDV-ZhHEeCrDV,cgFv!ZhHEeCrDV kFBSMXyyd' tvo Yplb.zbyUuh cgFv?PvJZQkgd:kFBSMXyyd' Yplb cgFv-ZhHEeCrDV zbyUuh kFBSMXyyd' pvMxP pvMxP;cgFv Yplb kFBSMXyyd'!Yplb!ZhHEeCrDV;pvMxP zbyUuh kFBSMXyyd',kFBSMXyyd'-pvMxP_PvJZQkgd_PvJZQkgd zbyUuh.pvMxP zbyUuh;PvJZQkgd kFBSMXyyd':ZhHEeCrDV/ZhHEeCrDV/cgFv;tvo,kFBSMXyyd' PvJZQkgd:PvJZQkgd,zbyUuh";
+            //TheTops.MaxCount(words);
 
-            string words = "  , e   .. ";
-            string wordstwo = "  , e   .. ";
-            
-            List<string> answer = TopThree(wordstwo);
-            //string[] thewords = wordstwo.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            //string wordstwo = "e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e";
+            List<string> answer = TheTops.MaxCount(words);
+            List<string> answer2 = Top3(words);
 
             foreach (string item in answer)
             {
                 Console.WriteLine(item);
-                
+
+            }
+            Console.WriteLine("--------- // -------");
+            foreach (string item in answer2)
+            {
+                Console.WriteLine(item);
+
             }
             Console.WriteLine(answer.Count());
 
@@ -28,152 +36,20 @@ namespace training_april
 
             
         }
+        //This is the solution with Regex
+        //My solution is in TheTops class
         public static List<string> Top3(string s)
         {
-            List<string> answer = new List<string>();
-            List<char> listofChars = new List<char>();
-            if (s.Length==0)
-            {
-                return answer;
-            }
-            else
-            {
-                listofChars.AddRange(s);
+            return Regex.Matches(s.ToLowerInvariant(), @"('*[a-z]'*)+")
+         .GroupBy(match => match.Value)
+         .OrderByDescending(g => g.Count())
+         .Select(p => p.Key)
+         .Take(3)
+         .ToList();
 
-                for (int i = 0; i < s.Length; i++)
-                {
-                    if (!Char.IsLetter(listofChars[i]) && listofChars[i] != '\'')
-                    {
-                        listofChars[i] = ' ';
-                    }
-                }
-                string onlyLetters = new String(listofChars.ToArray());
-                Console.WriteLine($"the string is: {onlyLetters} ");
-                string[] thewords = onlyLetters.Split(" ");
-                for (int i = 0; i < thewords.Length; i++)
-                {
-                    if (String.IsNullOrEmpty(thewords[i]))
-                    {
-                        Console.WriteLine("hola");
-                    }
-                }
-
-
-                
-                List<string> finalWords = thewords.GroupBy(x => x).OrderByDescending(x => x.Count()).Select(x => x.Key).ToList();
-               
-                if (finalWords.Count < 3)
-                {
-                    return finalWords;
-                }
-                else
-                {
-                    return finalWords.Take(3).ToList();
-                }
-
-            }
+        }
          
-            
-
-        }
-        public static List<string> TopThree(string s)
-        {
-            List<string> topThreeWords = new List<string>();
-            if (String.IsNullOrEmpty(s))
-            {
-                return topThreeWords;
-            }
-            else
-            {
-                string[] thewords = s.ToLower().Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                Dictionary<string, int> wordFrequencies = new Dictionary<string, int>();
-
-                List<string> arrayWords = new List<string>();
-
-                foreach (var item in thewords)
-                {
-                    string myWord = clearWord(item);
-                    if (!wordFrequencies.ContainsKey(myWord))
-                    {
-                        wordFrequencies.Add(myWord, 1);
-                    }
-                    else
-                    {
-                        wordFrequencies[myWord] = wordFrequencies[myWord] + 1;
-                    }
-                }
-                //foreach (var item in wordFrequencies)
-                //{
-                //    Console.WriteLine($"the word {item.Key} appears {item.Value} times");
-                //}
-
-
-
-                List<string> listOrderedWords = wordFrequencies.Keys.OrderByDescending(x => wordFrequencies[x]).ToList();
-                
-                
-
-
-                if (listOrderedWords.Count<3)
-                {
-                    return listOrderedWords;
-                }
-                else
-                {
-                    return listOrderedWords.Take(3).ToList(); 
-                }
-                
-            }
-
-
-        }
-        public static string clearWord(string s)
-        {
-            string word = "";
-            int i = 0;
-            while (i < s.Length)
-            {
-                if (Char.IsLetter(s[i]) || (s[i] == '\''))
-                {
-                    word = word + s[i];
-                    i++;
-                }
-                else
-                {
-                    i++;
-                }
-
-            }
-            return word;
-        }
-
-
-        public static List<string> clearWord2(string s)
-        {
-            List<string> words = new List<string>();
-            string word = "";
-            int i = 0;
-            while (i<s.Length)
-            {
-                if (Char.IsLetter(s[i]) || (s[i] == '\''))
-                {
-                    word = word + s[i];
-                    i++;
-                }
-                else
-                {
-                    if (Char.IsWhiteSpace(s[i]))
-                    {
-                        words.Add(word);
-                        word = "";
-                    }
-                    i++;
-                }
-
-            }
-            return words;
-
-}
+          
 
     }
 }
