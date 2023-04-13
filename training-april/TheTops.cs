@@ -37,6 +37,7 @@ namespace training_april
             foreach (string item in wordsArray)
             {
                 string word = onlyWords(item);
+                Console.WriteLine(word);
                 if (!String.IsNullOrEmpty(word))
                 {
                 realWords.Add(word);
