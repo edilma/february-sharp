@@ -10,25 +10,35 @@ namespace training_april
     {
         static void Main(string[] args)
         {
-            string words = " PvJZQkgd pvMxP ZhHEeCrDV Yplb:ZhHEeCrDV:kFBSMXyyd'?pvMxP-ZhHEeCrDV ZhHEeCrDV?kFBSMXyyd'_kFBSMXyyd' cgFv pvMxP_Yplb:PvJZQkgd.ZhHEeCrDV ZhHEeCrDV.PvJZQkgd-cgFv!kFBSMXyyd'!PvJZQkgd/ZhHEeCrDV zbyUuh Yplb PvJZQkgd!kFBSMXyyd' cgFv ZhHEeCrDV,Yplb.ZhHEeCrDV PvJZQkgd cgFv!cgFv cgFv PvJZQkgd pvMxP.kFBSMXyyd'.kFBSMXyyd' ZhHEeCrDV Yplb ZhHEeCrDV PvJZQkgd ZhHEeCrDV zbyUuh kFBSMXyyd';kFBSMXyyd'-cgFv?pvMxP/ZhHEeCrDV kFBSMXyyd' pvMxP ZhHEeCrDV?zbyUuh ZhHEeCrDV_Yplb ZhHEeCrDV?Yplb-zbyUuh zbyUuh zbyUuh zbyUuh_Yplb.ZhHEeCrDV.pvMxP zbyUuh zbyUuh?Yplb ZhHEeCrDV zbyUuh ZhHEeCrDV:zbyUuh,ZhHEeCrDV kFBSMXyyd' zbyUuh kFBSMXyyd'-ZhHEeCrDV-ZhHEeCrDV,cgFv!ZhHEeCrDV kFBSMXyyd' tvo Yplb.zbyUuh cgFv?PvJZQkgd:kFBSMXyyd' Yplb cgFv-ZhHEeCrDV zbyUuh kFBSMXyyd' pvMxP pvMxP;cgFv Yplb kFBSMXyyd'!Yplb!ZhHEeCrDV;pvMxP zbyUuh kFBSMXyyd',kFBSMXyyd'-pvMxP_PvJZQkgd_PvJZQkgd zbyUuh.pvMxP zbyUuh;PvJZQkgd kFBSMXyyd':ZhHEeCrDV/ZhHEeCrDV/cgFv;tvo,kFBSMXyyd' PvJZQkgd:PvJZQkgd,zbyUuh";
+            //string words = " PvJZQkgd pvMxP ZhHEeCrDV Yplb:ZhHEeCrDV:kFBSMXyyd'?pvMxP-ZhHEeCrDV ZhHEeCrDV?kFBSMXyyd'_kFBSMXyyd' cgFv pvMxP_Yplb:PvJZQkgd.ZhHEeCrDV ZhHEeCrDV.PvJZQkgd-cgFv!kFBSMXyyd'!PvJZQkgd/ZhHEeCrDV zbyUuh Yplb PvJZQkgd!kFBSMXyyd' cgFv ZhHEeCrDV,Yplb.ZhHEeCrDV PvJZQkgd cgFv!cgFv cgFv PvJZQkgd pvMxP.kFBSMXyyd'.kFBSMXyyd' ZhHEeCrDV Yplb ZhHEeCrDV PvJZQkgd ZhHEeCrDV zbyUuh kFBSMXyyd';kFBSMXyyd'-cgFv?pvMxP/ZhHEeCrDV kFBSMXyyd' pvMxP ZhHEeCrDV?zbyUuh ZhHEeCrDV_Yplb ZhHEeCrDV?Yplb-zbyUuh zbyUuh zbyUuh zbyUuh_Yplb.ZhHEeCrDV.pvMxP zbyUuh zbyUuh?Yplb ZhHEeCrDV zbyUuh ZhHEeCrDV:zbyUuh,ZhHEeCrDV kFBSMXyyd' zbyUuh kFBSMXyyd'-ZhHEeCrDV-ZhHEeCrDV,cgFv!ZhHEeCrDV kFBSMXyyd' tvo Yplb.zbyUuh cgFv?PvJZQkgd:kFBSMXyyd' Yplb cgFv-ZhHEeCrDV zbyUuh kFBSMXyyd' pvMxP pvMxP;cgFv Yplb kFBSMXyyd'!Yplb!ZhHEeCrDV;pvMxP zbyUuh kFBSMXyyd',kFBSMXyyd'-pvMxP_PvJZQkgd_PvJZQkgd zbyUuh.pvMxP zbyUuh;PvJZQkgd kFBSMXyyd':ZhHEeCrDV/ZhHEeCrDV/cgFv;tvo,kFBSMXyyd' PvJZQkgd:PvJZQkgd,zbyUuh";
             //TheTops.MaxCount(words);
 
             //string wordstwo = "e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e";
-            List<string> answer = TheTops.MaxCount(words);
-            List<string> answer2 = Top3(words);
+            //List<string> answer = TheTops.MaxCount(words);
+            //List<string> answer2 = Top3(words);
 
-            foreach (string item in answer)
-            {
-                Console.WriteLine(item);
+            //foreach (string item in answer)
+            //{
+            //    Console.WriteLine(item);
 
-            }
-            Console.WriteLine("--------- // -------");
-            foreach (string item in answer2)
-            {
-                Console.WriteLine(item);
+            //}
+            //Console.WriteLine("--------- // -------");
+            //foreach (string item in answer2)
+            //{
+            //    Console.WriteLine(item);
 
-            }
-            Console.WriteLine(answer.Count());
+            //}
+            //Console.WriteLine(answer.Count());
+
+            string phrase = "How can mirrors be real if our eyes aren't real";
+
+            string newWord = JadenCase.ToJadenCase(phrase);
+
+
+
+            //string answer = Casing.ToJadenCase(words);
+
+            Console.WriteLine(newWord);
 
             Console.ReadLine();
             
@@ -48,8 +58,9 @@ namespace training_april
          .ToList();
 
         }
-         
-          
+       
+
+
 
     }
 }

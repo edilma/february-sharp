@@ -5,7 +5,7 @@ using System.Text;
 
 namespace training_april
 {
-    internal class TheTops
+    public class TheTops
     {
         
         public static string onlyWords(string s)
@@ -57,6 +57,7 @@ namespace training_april
             return mainwords;
 
         }
+
 
 
     }
