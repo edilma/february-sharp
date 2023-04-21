@@ -55,9 +55,9 @@ namespace training_april
             //string[] availablePets = { "dog", "cat",  "fish" };
             //string[] unavailablePets = {"bird", "snake", "lizard" , "rabbit"};
 
-            int[] numbers = { 7, 2, 8, 4, 0 ,-3};
-            Console.WriteLine(MaximumProduct(numbers));
-            
+            //int[] numbers = { 7, 2, 8, 4, 0 ,-3};
+            //Console.WriteLine(MaximumProduct(numbers));
+
 
             //Array.ForEach(availablePets,Console.WriteLine);
             //Console.WriteLine();
@@ -65,12 +65,37 @@ namespace training_april
 
             //Console.WriteLine(alpha);
 
+            Node<int> head = Node<int>.BuildNode(8);
+            Node<int> nodeA = Node<int>.BuildNode(3);
+            Node<int> nodeB = Node<int>.BuildNode(18);
+            Node<int> nodeC = Node<int>.BuildNode(12);
+            Node<int> nodeD = Node<int>.BuildNode(1);
+
+            head.next = nodeA;
+            nodeA.next = nodeB;
+            nodeB.next = nodeC;
+            nodeC.next = nodeD;
+
+
+            Node<int>.PrintLinkedList(head);
+            Node<int>.DeleteMiddleNode(head);
+            Node<int>.PrintLinkedList(head);
+
+
+
             Console.ReadLine();
             
            
 
             
         }
+
+       
+
+
+
+
+
         //This is the solution with Regex
         //My solution is in TheTops class
         public static List<string> Top3(string s)
