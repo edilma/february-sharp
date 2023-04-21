@@ -65,21 +65,44 @@ namespace training_april
 
             //Console.WriteLine(alpha);
 
-            Node<int> head = Node<int>.BuildNode(8);
-            Node<int> nodeA = Node<int>.BuildNode(3);
-            Node<int> nodeB = Node<int>.BuildNode(18);
-            Node<int> nodeC = Node<int>.BuildNode(12);
-            Node<int> nodeD = Node<int>.BuildNode(1);
+            //Node<int> head = Node<int>.BuildNode(8);
+            //Node<int> nodeA = Node<int>.BuildNode(3);
+            //Node<int> nodeB = Node<int>.BuildNode(18);
+            //Node<int> nodeC = Node<int>.BuildNode(12);
+            //Node<int> nodeD = Node<int>.BuildNode(1);
 
-            head.next = nodeA;
-            nodeA.next = nodeB;
-            nodeB.next = nodeC;
-            nodeC.next = nodeD;
+            //head.next = nodeA;
+            //nodeA.next = nodeB;
+            //nodeB.next = nodeC;
+            //nodeC.next = nodeD;
 
 
-            Node<int>.PrintLinkedList(head);
-            Node<int>.DeleteMiddleNode(head);
-            Node<int>.PrintLinkedList(head);
+            //Node<int>.PrintLinkedList(head);
+            //Node<int>.DeleteMiddleNode(head);
+            //Node<int>.PrintLinkedList(head);
+
+            //Console.WriteLine("I am here");
+
+            //Dictionary<int, string> binaryDic = binaryValues.PrintBinary(5);
+            //foreach (KeyValuePair<int, string> item in binaryDic)
+            //{
+            //    Console.WriteLine(item.Key + " " + item.Value);
+            //}
+            //Console.WriteLine("**************");
+
+            //binaryValues.PrintBinaryUsingQueue(-5);
+            string t1 = "(<{ [()]}>)";
+            string t2 = "[<increment]";
+            string t3 = "<increment(";
+            string t4 = "(ui[op]io)";
+            string t5 = "uiopio";
+
+            Console.WriteLine(binaryValues.IsMatching(t1));
+            Console.WriteLine(binaryValues.IsMatching(t2));
+            Console.WriteLine(binaryValues.IsMatching(t3));
+            Console.WriteLine(binaryValues.IsMatching(t4));
+            Console.WriteLine(binaryValues.IsMatching(t5));
+
 
 
 
