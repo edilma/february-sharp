@@ -1,0 +1,8 @@
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\bin\Debug\fund_cond.exe.config
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\bin\Debug\fund_cond.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\bin\Debug\fund_cond.pdb
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\obj\Debug\fund_cond.csproj.AssemblyReference.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\obj\Debug\fund_cond.csproj.SuggestedBindingRedirects.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\obj\Debug\fund_cond.csproj.CoreCompileInputs.cache
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\obj\Debug\fund_cond.exe
+C:\Users\edilm\OneDrive\Desktop\Code\2023\CSharp\February\may_training\fund_cond\fund_cond\obj\Debug\fund_cond.pdb
