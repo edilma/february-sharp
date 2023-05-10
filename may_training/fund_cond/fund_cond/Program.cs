@@ -31,7 +31,7 @@ namespace fund_cond
           // delete the repeats from nums
             for (int i = 0; i < nums.Length; i++)
             {
-                Console.WriteLine(nums[i]);
+               // Console.WriteLine(nums[i]);
                 if (!uniques.Contains(nums[i]))
                 {
                     nums[i] = 0;
