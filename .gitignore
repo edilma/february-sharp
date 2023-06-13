@@ -1,0 +1,30 @@
+# .NET build artifacts
+bin/
+obj/
+
+# Node.js dependencies
+node_modules/
+
+# Compiled CSS and JavaScript files
+*.css
+*.js
+
+# Compiled TypeScript files
+*.js.map
+
+# Visual Studio files
+.vs/
+*.sln
+*.csproj
+*.user
+*.vscode/
+
+# JetBrains Rider files
+.idea/
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# Ignore files named "secrets" with any extension
+secrets.*
