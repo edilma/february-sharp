@@ -1,2 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+var colors = new List<string> {"green", "Blush","Yellow","Red","Orange",
+"Burgundy","Purple","White"};
+
+var p = colors.Where(x => x.StartsWith("W)"));
+Console.WriteLine(p);
